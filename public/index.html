@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-film"></i>
+            <h2>MovieWatch</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#watchlist">Watchlist</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span> PERSONAL MOVIE COLLECTION</span>
+
+            <h1>
+                Organize Your
+                <br>
+                Favorite Movies
+            </h1>
+
+            <p>
+                Keep track of every movie you want to watch,
+                mark them as watched, and build your personal
+                movie collection.
+            </p>
+
+            <a href="#addMovie" class="hero-btn">
+                Add Your First Movie
+            </a>
+
+        </div>
+
+    </section>
+
+   <form id="movieForm">
+
+    <div class="form-fields">
+
+        <div class="input-group">
+
+            <label>Movie Title</label>
+
+            <input
+            type="text"
+            id="title"
+            placeholder="Enter movie title">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Genre</label>
+
+            <input
+            type="text"
+            id="genre"
+            placeholder="Action, Sci-Fi, Horror...">
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>Status</label>
+
+            <select id="status">
+
+                <option value="Not Watched">
+                    Not Watched
+                </option>
+
+                <option value="Watched">
+                    Watched
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <button type="submit">
+
+        <i class="buttons"></i>
+        Add Movie
+    </button>
+
+</form>
+
+    <section id="watchlist" class="watchlist">
+
+    <div class="section-title">
+
+        <h2>My Watchlist</h2>
+        <p>Your saved movies will appear below.</p>
+
+    </div>
+
+    <div class="movie-container" id="movieContainer">
+
+    </div>
+
+</section>
+
+    <footer>
+
+        <p>
+            © 2026 MovieWatch |
+            Built with HTML, CSS, JavaScript & Express
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
